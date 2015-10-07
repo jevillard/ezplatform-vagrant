@@ -18,5 +18,6 @@ Vagrant.configure("2") do |config|
         mount_options: ["dmode=775,fmode=664"]
 
     config.vm.provision "shell", path: "bin/setup.sh"
+    config.vm.provision "shell", path: "bin/ezplatform.sh"
 
 end
